@@ -8,7 +8,7 @@ class InicioSesion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Iniciar Sesión "), centerTitle: true),
-      backgroundColor: Color.fromARGB(255, 78, 157, 196),
+      backgroundColor: Color.fromARGB(255, 192, 212, 229),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
