@@ -1,6 +1,5 @@
 import 'package:mediplanmovil/Constants/auth_constraits.dart';
 import 'package:flutter/material.dart';
-//import 'package:mediplanmovil/src/app/app.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
