@@ -20,11 +20,8 @@ class InicioSesion extends StatelessWidget {
                 height: 70,
               ),
             ),
-            const Text("Iniciar Sesión",
-              style: TextStyle(fontSize: 26,fontFamily:'Droid Sans', color:Color.fromARGB(255, 255, 255, 255)
-              ),
-            ),
-            const  SizedBox(height: 16.0),
+
+            const  SizedBox(height: 50.0),
             const  Text(
               'Ingrese los siguientes datos:                        ',
               style: TextStyle(
@@ -64,7 +61,7 @@ class InicioSesion extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30.0),
                   borderSide: BorderSide(
                     color: const Color.fromARGB(255, 255, 255, 255)!,
-                    width: 1.0, // Ancho del borde
+                    width: 1.0,
                   ),
                 ),
                 contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
@@ -99,7 +96,7 @@ class InicioSesion extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Olvido su contraseña? ',
+                  'Crear una nueva cuenta: ',
                   style: TextStyle(
                     color: Color.fromARGB(255, 64, 66, 78),
                     fontSize: 12,
@@ -112,7 +109,7 @@ class InicioSesion extends StatelessWidget {
                     );
                   },
                   child: const Text(
-                    'Recuperar',
+                    'Registrar',
                     style: TextStyle(
                       fontSize: 12,
                       decoration: TextDecoration.underline,
