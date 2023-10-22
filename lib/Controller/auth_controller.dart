@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:mediplanmovil/Constants/auth_constraits.dart';
 import 'package:mediplanmovil/Screens/HomeScreen/home.dart';
-import 'package:mediplanmovil/Screens/register/register.dart';
+import 'package:mediplanmovil/Screens/IniciarSesion/iniciarsesion.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthController extends GetxController {
@@ -23,7 +23,7 @@ class AuthController extends GetxController {
 
   _setInitialScreen(User? user) {
     if (user == null) {
-      Get.offAll(() => const Register());
+      Get.offAll(() => const InicioSesion());
     } else {
       Get.offAll(() => const HomePage());
     }
@@ -32,7 +32,7 @@ class AuthController extends GetxController {
   _setInitialScreenGoogle(GoogleSignInAccount? googleSignInAccount) {
     print(googleSignInAccount);
     if (googleSignInAccount != null) {
-      Get.offAll(() => const Register());
+      Get.offAll(() => const InicioSesion());
     } else {
       Get.offAll(() => const HomePage());
     }
@@ -65,7 +65,7 @@ class AuthController extends GetxController {
     }
   }
 
-  void emailRegistrer(String email, password) {
+  void emailLogin(String email, password) {
     try {
       auth.signInWithEmailAndPassword(email: email, password: password);
     } catch (firebaseAuthException) {

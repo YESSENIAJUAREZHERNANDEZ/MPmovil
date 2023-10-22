@@ -8,6 +8,6 @@ import 'package:firebase_auth/firebase_auth.dart';
     try {
       await _auth.sendPasswordResetEmail(email: _emailController.text.trim());
     } catch (e) {
-      print('Error al restablecer la contraseña: $e');
+      print('Error al restablecer su contraseña: $e');
     }
   }
